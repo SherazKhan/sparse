@@ -28,8 +28,8 @@ MATLAB code to read data, process source/noise covariances, define parameter cho
 Note: running this code will display instructions on shell commands to run as and when required. 
 Core_Functions: General Sub-Functions Called for Angles, Field Maps, Algorithm, Visualization, ETC
 
-
-### Sparsity enables subcortical source estimation
+## Reference:
+#### Sparsity enables subcortical source estimation
 Pavitra Krishnaswamy, Gabriel Obregon-Henao, Jyrki Ahveninen, Sheraz Khan, Behtash Babadi, Juan Eugenio Iglesias, Matti S. Hämäläinen, Patrick L. Purdon, Proceedings of the National Academy of Sciences Nov 2017, 114 (48) E10465-E10474; DOI: 10.1073/pnas.1705414114
 
 https://www.pnas.org/content/114/48/E10465.full
