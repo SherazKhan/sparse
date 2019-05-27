@@ -1,4 +1,4 @@
-## Source Space and Forward_Solutions
+# Source Space and Forward_Solutions
 1. Define cortical surface source spaces
 a. Use standard steps (incl. patch decompositions) outlined in MNE manual 
 b. Same as used by SPIGH code 
@@ -18,8 +18,8 @@ b. Run scort_srcfwd_exec for subcortical volumes, hippocampus and brainstem
 5. In Freeview: view .mgz, label and surface files together to check if all patch/subvolume/surface source spaces are done properly, so as to be sure what regions forward solutions correspond to
 6. In Freeview, visualize subcortical source space masks to ensure all done correctly
 
-# Data_Process: Remove artifacts, Filter Data; Evoked Averages; Compute Covariances
-## Inverse_Solutions
+#### Data_Process: Remove artifacts, Filter Data; Evoked Averages; Compute Covariances
+# Inverse_Solutions
 MATLAB code to read data, process source/noise covariances, define parameter choices, obtain MNE estimates, obtain SPIGH estimates for given hierarchy, transition across hierarchies
 1. Scripts to run cortical inverse solution (within and across all cortical hierarchies)
 2. Scripts to visualize cortical inverse solution (time series, spatiotemporal movies, performance metrics)
