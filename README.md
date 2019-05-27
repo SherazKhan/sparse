@@ -32,4 +32,4 @@ Core_Functions: General Sub-Functions Called for Angles, Field Maps, Algorithm, 
 ### Sparsity enables subcortical source estimation
 Pavitra Krishnaswamy, Gabriel Obregon-Henao, Jyrki Ahveninen, Sheraz Khan, Behtash Babadi, Juan Eugenio Iglesias, Matti S. Hämäläinen, Patrick L. Purdon, Proceedings of the National Academy of Sciences Nov 2017, 114 (48) E10465-E10474; DOI: 10.1073/pnas.1705414114
 
-https://www.pnas.org/content/114/48/E10465.short
+https://www.pnas.org/content/114/48/E10465.full
