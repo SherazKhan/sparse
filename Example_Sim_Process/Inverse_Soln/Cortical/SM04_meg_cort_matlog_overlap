@@ -1,0 +1,43 @@
+Reading forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/SEP/SM04//fwd/SM04-meg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (288969 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+mutual coherence with neighbors only
+Computing mutual coherences in ico-1p source space
+Computing mutual coherences in ico-2p source space
+Computing mutual coherences in ico-3p source space
+    0.7700    0.8500    0.8800
+
+Subspace pursuit in ico-1p source space
+converged per usual
+
+ans =
+
+     1
+
+left
+right
+Elapsed time is 12.304404 seconds.
+Subspace pursuit in ico-2p source space
+converged per residual error min.
+
+ans =
+
+     1
+
+left
+right
+Elapsed time is 9.095723 seconds.
+Subspace pursuit in ico-3p source space
+converged per residual error min.
+
+ans =
+
+     1
+
+left
+right
+Elapsed time is 4.556834 seconds.
+final cortical solution:99   123   144   223   274   388   497  1040

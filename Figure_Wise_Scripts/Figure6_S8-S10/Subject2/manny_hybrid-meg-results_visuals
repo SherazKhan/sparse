@@ -1,0 +1,615 @@
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/MLR_hip-oct-3/manny-meg_eeg-AEP_scortest_MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 36)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',36,0)">line 36</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/MLRMLR_Cortical_Hierarchy_Results/manny-meg_eeg-AEP_scortest_MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 41)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)">line 41</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/MLRMLR_Cortical_Hierarchy_Results/manny-meg_eeg-AEP_scortest_MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 41)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)">line 41</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/MLR_Cortical_Hierarchy_Results/manny-meg_eeg-AEP_scortest_MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 41)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)">line 41</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/MLR_Cortical_Hierarchy_Results/manny-meg_eeg-AEP_cortest__MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 41)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)">line 41</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/MLR_Cortical_Hierarchy_Results/manny-meg_eeg-AEP_cortest__MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 41)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)">line 41</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file '/eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/meas/manny-meg_eeg-AEPMLR_measinfo.mat'. No such file
+or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 39)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',39,0)">line 39</a>)
+load(meas_fname,'Y','Yraw','N','t1','t2','stc','Fs','time','scalarX');      %meas info for subcortical step
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file '/eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/meas/manny-meg_eeg-AEPMLR_measinfo.mat'. No such file
+or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 39)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',39,0)">line 39</a>)
+load(meas_fname,'Y','Yraw','N','t1','t2','stc','Fs','time','scalarX');      %meas info for subcortical step
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/HFABR_Estimation_2Stage_Results/manny-meg_eeg-AEP_scortest__MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 41)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)">line 41</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/HFABR_Estimation_2Stage_Results/manny-meg_eeg-AEP_scortest__MLR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 41)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',41,0)">line 41</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new
+
+subfol =
+
+MLR_Cortical_Hierarchy_Results
+
+
+typetest =
+
+_cortest
+
+Reading forward solution from /eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/fwd/manny-meg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (323764 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+	Reading a source space...Patch information added...[done]
+	Reading a source space...Patch information added...[done]
+	2 source spaces read
+Reading forward solution from /eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/fwd/manny_hipsurf-meg-oct-3-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (7358 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+	Reading a source space...Patch information added...[done]
+	Reading a source space...Patch information added...[done]
+	2 source spaces read
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file '/eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/fwd/manny_subc_meg_eeg_plr-prewhite_SVDs_MLR.mat'. No
+such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 50)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',50,0)">line 50</a>)
+load(subc_svds_fname,'sdiv_fwd','sregname');                                %subcortical fwds by subdivisions with regnames
+} 
+manny_run_visuals_new
+
+subfol =
+
+MLR_Cortical_Hierarchy_Results
+
+
+typetest =
+
+_cortest
+
+Reading forward solution from /eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/fwd/manny-meg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (323764 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+	Reading a source space...Patch information added...[done]
+	Reading a source space...Patch information added...[done]
+	2 source spaces read
+Reading forward solution from /eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/fwd/manny_hipsurf-meg-oct-3-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (7358 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+	Reading a source space...Patch information added...[done]
+	Reading a source space...Patch information added...[done]
+	2 source spaces read
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file '/eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/fwd/manny_subc_meg_eeg_plr-prewhite_SVDs_MLR.mat'. No
+such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 50)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',50,0)">line 50</a>)
+load(subc_svds_fname,'sdiv_fwd','sregname');                                %subcortical fwds by subdivisions with regnames
+} 
+manny_run_visuals_new
+{Undefined function or variable 'datapath'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 10)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',10,0)">line 10</a>)
+	subc_svds_fname = strcat(datapath, 'fwd/', prefix,'_cort_',meastype,'_plr-prewhite','_SVDs_MLR','.mat'); %subcortical and
+        cortical SVD
+} 
+patch_num = 441;
+datapath = '/autofs/eris/purdongp/users/pavitrak/sourceloc_data/AEP/'
+
+datapath =
+
+/autofs/eris/purdongp/users/pavitrak/sourceloc_data/AEP/
+
+datapath = '/autofs/eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny'
+
+datapath =
+
+/autofs/eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny
+
+prefix = 'manny'
+
+prefix =
+
+manny
+
+cdiv = 3
+
+cdiv =
+
+     3
+
+csrc = mne_read_source_spaces(strcat(datapath, '/src/', prefix, '-ico-', num2str(cdiv), 'p-src.fif'))
+	Reading a source space...Patch information added...[done]
+	Reading a source space...Patch information added...[done]
+	2 source spaces read
+
+csrc = 
+
+1x2 <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> array with fields:
+
+    id
+    np
+    ntri
+    coord_frame
+    rr
+    nn
+    tris
+    nuse
+    inuse
+    vertno
+    nuse_tri
+    use_tris
+    nearest
+    nearest_dist
+    pinfo
+    dist
+    dist_limit
+
+cfwd = mne_read_forward_solution(strcat(datapath, '/fwd/', prefix, '-meg-all-fixed-fwd.fif'))
+Reading forward solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/AEP/manny/fwd/manny-meg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (323764 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+
+cfwd = 
+
+     source_ori: 1
+    coord_frame: 4
+        nsource: 323764
+          nchan: 306
+            sol: [1x1 struct]
+       sol_grad: []
+     mri_head_t: [1x1 struct]
+            src: [1x2 struct]
+      source_rr: [323764x3 double]
+      source_nn: [323764x3 double]
+            chs: [1x306 struct]
+
+patch_to_labloc(csrc,cfwd,patch_num)
+
+ans =
+
+      107169
+
+[o1, o2, o3, o4] = patch_to_labloc(csrc,cfwd,patch_num)
+
+o1 =
+
+      107169
+
+
+o2 =
+
+  Columns 1 through 10
+
+      101760      101776      101777      102932      102933      102934      102935      102941      102942      102944
+
+  Columns 11 through 20
+
+      104000      104009      104010      104018      104019      104020      104028      104029      104041      104050
+
+  Columns 21 through 30
+
+      104051      104052      104053      104054      104055      104056      104057      104064      104065      104066
+
+  Columns 31 through 40
+
+      104067      104068      104069      104074      104075      104091      104092      105094      105095      105102
+
+  Columns 41 through 50
+
+      105103      105112      105113      105114      105122      105123      105124      105125      105134      105135
+
+  Columns 51 through 60
+
+      105136      105137      105138      105139      105149      105150      105151      105152      105153      105154
+
+  Columns 61 through 70
+
+      105155      105156      105163      105169      105170      105183      105184      105185      105186      105187
+
+  Columns 71 through 80
+
+      106107      106108      106109      106115      106116      106117      106125      106126      106127      106128
+
+  Columns 81 through 90
+
+      106129      106137      106138      106139      106140      106141      106142      106143      106144      106150
+
+  Columns 91 through 100
+
+      106151      106152      106153      106154      106155      106156      106157      106167      106168      106169
+
+  Columns 101 through 110
+
+      106170      106171      106172      106179      106180      106187      106188      106189      106190      106191
+
+  Columns 111 through 120
+
+      106192      106193      106194      106206      106207      106208      106209      106210      106211      107142
+
+  Columns 121 through 130
+
+      107143      107144      107150      107151      107152      107159      107160      107161      107170      107171
+
+  Columns 131 through 140
+
+      107181      107182      107191      107192      107193      107205      107206      107207      107208      107218
+
+  Columns 141 through 150
+
+      107219      107220      107221      107222      107223      108193      108194      108199      108200      108206
+
+  Columns 151 through 160
+
+      108207      108213      108214      108225      108226      108236      108237      108238      108239      108251
+
+  Columns 161 through 170
+
+      108252      108253      108254      108262      108263      108264      108265      108266      109323      109324
+
+  Columns 171 through 180
+
+      109330      109331      109338      109345      109356      109357      109367      109368      109369      109382
+
+  Columns 181 through 190
+
+      109383      109392      109393      110478      110486      110487      110495      110501      110510      110511
+
+  Columns 191 through 200
+
+      110521      110522      110534      110535      110549      111610      111611      111619      111620      111621
+
+  Columns 201 through 210
+
+      111628      111629      111635      111636      111643      111644      111652      111653      111662      112741
+
+  Columns 211 through 220
+
+      112746      112747      112752      112753      112759      112765      112766      112772      112773      113791
+
+  Columns 221 through 227
+
+      113798      113804      113805      113813      114847      114856      114864
+
+
+o3 =
+
+   -0.0608    0.0115    0.0413
+   -0.0602    0.0120    0.0405
+   -0.0612    0.0118    0.0404
+   -0.0597    0.0127    0.0400
+   -0.0607    0.0125    0.0397
+   -0.0618    0.0122    0.0395
+   -0.0626    0.0118    0.0395
+   -0.0626    0.0124    0.0392
+   -0.0633    0.0121    0.0391
+   -0.0651    0.0122    0.0389
+   -0.0586    0.0158    0.0433
+   -0.0580    0.0152    0.0431
+   -0.0587    0.0154    0.0428
+   -0.0574    0.0145    0.0428
+   -0.0580    0.0151    0.0422
+   -0.0587    0.0153    0.0424
+   -0.0570    0.0144    0.0417
+   -0.0576    0.0149    0.0415
+   -0.0576    0.0139    0.0401
+   -0.0581    0.0135    0.0398
+   -0.0591    0.0135    0.0396
+   -0.0602    0.0135    0.0394
+   -0.0614    0.0133    0.0391
+   -0.0626    0.0136    0.0389
+   -0.0635    0.0137    0.0388
+   -0.0642    0.0137    0.0387
+   -0.0645    0.0136    0.0385
+   -0.0622    0.0129    0.0390
+   -0.0630    0.0129    0.0389
+   -0.0639    0.0129    0.0388
+   -0.0646    0.0129    0.0387
+   -0.0650    0.0129    0.0384
+   -0.0655    0.0124    0.0382
+   -0.0652    0.0128    0.0379
+   -0.0655    0.0122    0.0378
+   -0.0644    0.0125    0.0369
+   -0.0651    0.0125    0.0374
+   -0.0589    0.0165    0.0436
+   -0.0596    0.0170    0.0438
+   -0.0592    0.0159    0.0431
+   -0.0597    0.0166    0.0433
+   -0.0586    0.0154    0.0420
+   -0.0592    0.0154    0.0424
+   -0.0597    0.0162    0.0426
+   -0.0575    0.0148    0.0411
+   -0.0581    0.0153    0.0412
+   -0.0590    0.0156    0.0415
+   -0.0596    0.0159    0.0419
+   -0.0572    0.0145    0.0409
+   -0.0578    0.0147    0.0403
+   -0.0585    0.0150    0.0400
+   -0.0637    0.0149    0.0393
+   -0.0642    0.0150    0.0393
+   -0.0645    0.0151    0.0392
+   -0.0580    0.0141    0.0399
+   -0.0587    0.0145    0.0396
+   -0.0598    0.0143    0.0392
+   -0.0609    0.0143    0.0391
+   -0.0621    0.0143    0.0389
+   -0.0632    0.0144    0.0391
+   -0.0640    0.0144    0.0390
+   -0.0645    0.0146    0.0389
+   -0.0646    0.0141    0.0384
+   -0.0646    0.0140    0.0374
+   -0.0648    0.0137    0.0378
+   -0.0615    0.0130    0.0365
+   -0.0625    0.0130    0.0365
+   -0.0636    0.0132    0.0366
+   -0.0644    0.0135    0.0371
+   -0.0649    0.0131    0.0375
+   -0.0593    0.0175    0.0437
+   -0.0599    0.0174    0.0431
+   -0.0604    0.0176    0.0426
+   -0.0601    0.0170    0.0426
+   -0.0607    0.0174    0.0420
+   -0.0613    0.0175    0.0414
+   -0.0601    0.0166    0.0419
+   -0.0607    0.0169    0.0412
+   -0.0618    0.0170    0.0408
+   -0.0628    0.0167    0.0406
+   -0.0636    0.0165    0.0404
+   -0.0582    0.0152    0.0406
+   -0.0587    0.0155    0.0407
+   -0.0597    0.0161    0.0409
+   -0.0610    0.0165    0.0404
+   -0.0622    0.0162    0.0403
+   -0.0632    0.0160    0.0403
+   -0.0641    0.0160    0.0400
+   -0.0645    0.0159    0.0395
+   -0.0584    0.0153    0.0402
+   -0.0591    0.0153    0.0400
+   -0.0602    0.0158    0.0398
+   -0.0614    0.0158    0.0397
+   -0.0625    0.0156    0.0398
+   -0.0636    0.0153    0.0397
+   -0.0644    0.0155    0.0395
+   -0.0646    0.0154    0.0391
+   -0.0596    0.0151    0.0394
+   -0.0605    0.0152    0.0391
+   -0.0617    0.0151    0.0391
+   -0.0628    0.0150    0.0392
+   -0.0634    0.0149    0.0394
+   -0.0647    0.0148    0.0386
+   -0.0645    0.0148    0.0376
+   -0.0648    0.0146    0.0381
+   -0.0588    0.0146    0.0364
+   -0.0598    0.0146    0.0364
+   -0.0608    0.0146    0.0365
+   -0.0619    0.0147    0.0366
+   -0.0629    0.0147    0.0367
+   -0.0637    0.0146    0.0369
+   -0.0643    0.0145    0.0372
+   -0.0646    0.0143    0.0376
+   -0.0596    0.0137    0.0365
+   -0.0606    0.0138    0.0363
+   -0.0617    0.0138    0.0364
+   -0.0627    0.0139    0.0366
+   -0.0636    0.0140    0.0367
+   -0.0640    0.0141    0.0370
+   -0.0596    0.0182    0.0429
+   -0.0606    0.0183    0.0424
+   -0.0611    0.0188    0.0421
+   -0.0608    0.0179    0.0422
+   -0.0614    0.0182    0.0418
+   -0.0622    0.0181    0.0412
+   -0.0619    0.0177    0.0412
+   -0.0626    0.0175    0.0408
+   -0.0633    0.0171    0.0405
+   -0.0639    0.0169    0.0400
+   -0.0645    0.0164    0.0396
+   -0.0642    0.0168    0.0392
+   -0.0647    0.0161    0.0390
+   -0.0632    0.0167    0.0380
+   -0.0639    0.0164    0.0384
+   -0.0647    0.0155    0.0384
+   -0.0624    0.0163    0.0371
+   -0.0631    0.0162    0.0374
+   -0.0641    0.0154    0.0375
+   -0.0646    0.0151    0.0379
+   -0.0591    0.0154    0.0362
+   -0.0601    0.0155    0.0364
+   -0.0611    0.0156    0.0366
+   -0.0622    0.0157    0.0369
+   -0.0634    0.0153    0.0369
+   -0.0639    0.0149    0.0371
+   -0.0600    0.0191    0.0423
+   -0.0608    0.0193    0.0420
+   -0.0615    0.0193    0.0418
+   -0.0621    0.0190    0.0412
+   -0.0627    0.0184    0.0405
+   -0.0630    0.0176    0.0405
+   -0.0629    0.0183    0.0397
+   -0.0634    0.0177    0.0402
+   -0.0630    0.0181    0.0390
+   -0.0636    0.0175    0.0395
+   -0.0618    0.0177    0.0375
+   -0.0623    0.0176    0.0378
+   -0.0629    0.0175    0.0383
+   -0.0636    0.0173    0.0389
+   -0.0608    0.0172    0.0368
+   -0.0614    0.0172    0.0372
+   -0.0622    0.0169    0.0374
+   -0.0627    0.0170    0.0378
+   -0.0585    0.0163    0.0361
+   -0.0594    0.0163    0.0362
+   -0.0603    0.0166    0.0365
+   -0.0613    0.0164    0.0368
+   -0.0619    0.0165    0.0370
+   -0.0603    0.0200    0.0418
+   -0.0612    0.0201    0.0416
+   -0.0619    0.0200    0.0411
+   -0.0623    0.0197    0.0404
+   -0.0625    0.0194    0.0397
+   -0.0625    0.0191    0.0391
+   -0.0620    0.0191    0.0380
+   -0.0623    0.0189    0.0385
+   -0.0614    0.0183    0.0372
+   -0.0619    0.0185    0.0377
+   -0.0623    0.0183    0.0381
+   -0.0602    0.0177    0.0365
+   -0.0608    0.0180    0.0369
+   -0.0588    0.0171    0.0358
+   -0.0595    0.0173    0.0361
+   -0.0615    0.0209    0.0409
+   -0.0620    0.0207    0.0403
+   -0.0624    0.0204    0.0396
+   -0.0625    0.0202    0.0390
+   -0.0623    0.0200    0.0384
+   -0.0619    0.0195    0.0376
+   -0.0620    0.0200    0.0379
+   -0.0611    0.0190    0.0367
+   -0.0616    0.0193    0.0372
+   -0.0596    0.0184    0.0359
+   -0.0605    0.0187    0.0363
+   -0.0591    0.0178    0.0357
+   -0.0609    0.0216    0.0404
+   -0.0616    0.0214    0.0402
+   -0.0614    0.0219    0.0397
+   -0.0619    0.0215    0.0394
+   -0.0623    0.0210    0.0390
+   -0.0620    0.0214    0.0386
+   -0.0622    0.0209    0.0384
+   -0.0617    0.0212    0.0375
+   -0.0619    0.0208    0.0379
+   -0.0617    0.0205    0.0374
+   -0.0619    0.0205    0.0378
+   -0.0608    0.0197    0.0361
+   -0.0613    0.0200    0.0366
+   -0.0602    0.0194    0.0356
+   -0.0615    0.0224    0.0391
+   -0.0617    0.0221    0.0384
+   -0.0619    0.0215    0.0382
+   -0.0617    0.0217    0.0377
+   -0.0619    0.0213    0.0381
+   -0.0616    0.0215    0.0370
+   -0.0611    0.0203    0.0361
+   -0.0614    0.0210    0.0363
+   -0.0608    0.0205    0.0355
+   -0.0612    0.0211    0.0356
+   -0.0616    0.0228    0.0377
+   -0.0618    0.0225    0.0370
+   -0.0613    0.0220    0.0356
+   -0.0615    0.0220    0.0362
+   -0.0613    0.0215    0.0357
+   -0.0614    0.0234    0.0371
+   -0.0613    0.0231    0.0362
+   -0.0613    0.0225    0.0358
+
+
+o4 =
+
+l
+
+[o1, ~, ~, o4] = patch_to_labloc(csrc,cfwd,patch_num); cat(o1,'-',o4)
+
+ans(:,:,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,...) =
+
+-
+
+ans(:,:,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,...) =
+
+l
+
+[o1, ~, ~, o4] = patch_to_labloc(csrc,cfwd,patch_num); disp(o1); disp(o4)
+      107169
+
+l
+[o1, ~, ~, o4] = patch_to_labloc(csrc,cfwd,1042); disp(o1); disp(o4)
+       95901
+
+r
+[o1, ~, ~, o4] = patch_to_labloc(csrc,cfwd,1069); disp(o1); disp(o4)
+      103038
+
+r
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('load')" style="font-weight:bold">load</a>
+Unable to read file
+'/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/HFABR_hip-oct-3/manny-meg_eeg-AEP_scortest_HFABR.mat'.
+No such file or directory.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('manny_run_visuals_new', '/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m', 36)" style="font-weight:bold">manny_run_visuals_new</a> (<a href="matlab: opentoline('/autofs/eris/purdongp/users/pavitrak/sourceloc_scripts/figure_making/Figure7-8_S7-S9/Subject_2/manny_run_visuals_new.m',36,0)">line 36</a>)
+load(scort_resfname);                                                       % load hybrid estimation results
+} 
+manny_run_visuals_new

@@ -1,0 +1,71 @@
+#!/bin/csh -fx
+#Template file to generate subcortical volume source spaces and corresponding forward solutions
+
+###############################################################################################
+# INITIALIZE
+###############################################################################################
+set runlist = (1 3 4 5)
+setenv SUBJECTS_DIR /autofs/eris/purdongp/users/pavitrak/sourceloc_data/AEP
+setenv SUBJECT cat_004
+setenv SRCSPACE oct-3
+
+###############################################################################################
+# HIPPOCAMPAL SURFACE FORWARD SOLUTIONS
+###############################################################################################
+# CREATE RUNWISE MEG FORWARD SOLUTIONS (NO MINDIST)
+foreach run ($runlist)
+    mne_forward_solution --meg --accurate \
+    --src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+    --meas $SUBJECTS_DIR/$SUBJECT"/meas/preproc_rawdata/ABR_run"$run"_raw.fif"  \
+    --mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_raw-trans.fif" \
+    --bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+    --all --fixed \
+    --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run"$run"-fixed-fwd.fif"
+end
+
+# AVERAGE MEG FORWARD SOLUTIONS ACROSS RUNS (NO MINDIST)
+mne_average_forward_solutions --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run1-fixed-fwd.fif" \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run3-fixed-fwd.fif" \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run4-fixed-fwd.fif" \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run5-fixed-fwd.fif" \
+--out $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf-meg-"$SRCSPACE"-fixed-fwd.fif" \
+
+# CREATE RUNWISE MEG FORWARD SOLUTIONS
+foreach run ($runlist)
+    mne_forward_solution --meg --accurate \
+    --src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+    --meas $SUBJECTS_DIR/$SUBJECT"/meas/preproc_rawdata/ABR_run"$run"_raw.fif"  \
+    --mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_raw-trans.fif" \
+    --bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+    --all --mindist 5 --fixed \
+    --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run"$run"-mindist-fixed-fwd.fif"
+end
+
+# AVERAGE MEG FORWARD SOLUTIONS ACROSS RUNS
+mne_average_forward_solutions --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run1-mindist-fixed-fwd.fif" \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run3-mindist-fixed-fwd.fif" \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run4-mindist-fixed-fwd.fif" \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf1_meg_run5-mindist-fixed-fwd.fif" \
+--out $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf-meg-"$SRCSPACE"-mindist-fixed-fwd.fif" \
+
+# CREATE EEG FORWARD SOLUTION (NO MINDIST)
+mne_forward_solution --eeg \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT"/meas/preproc_rawdata/ABR_run1_raw.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_raw-trans.fif" \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--all --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf-eeg-"$SRCSPACE"-fixed-fwd.fif" \
+
+# CREATE EEG FORWARD SOLUTION
+mne_forward_solution --eeg \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT"/meas/preproc_rawdata/ABR_run1_raw.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_raw-trans.fif" \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--all --mindist 5 --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf-eeg-"$SRCSPACE"-mindist-fixed-fwd.fif" \
+
+###############################################################################################
+
+###############################################################################################

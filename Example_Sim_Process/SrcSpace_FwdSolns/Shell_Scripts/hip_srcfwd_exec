@@ -1,0 +1,52 @@
+#!/bin/csh -fx
+#Template file to generate subcortical volume source spaces and corresponding forward solutions
+
+###############################################################################################
+# INITIALIZE
+###############################################################################################
+setenv SUBJECTS_DIR /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP
+setenv SUBJECT SM04
+setenv SRCSPACE ico-1
+
+###############################################################################################
+# HIPPOCAMPAL SURFACE FORWARD SOLUTIONS
+###############################################################################################
+# CREATE MEG FORWARD SOLUTION (NO MINDIST)
+mne_forward_solution --meg --accurate \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif"  \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--all --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf_meg-"$SRCSPACE"-fixed-fwd.fif" \
+
+# CREATE MEG FORWARD SOLUTION
+mne_forward_solution --meg --accurate \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif"  \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--all --mindist 5 --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf_meg-"$SRCSPACE"-mindist-fixed-fwd.fif" \
+
+# CREATE EEG FORWARD SOLUTION (NO MINDIST)
+mne_forward_solution --eeg \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif"  \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--all --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf-eeg-"$SRCSPACE"-fixed-fwd.fif" \
+
+# CREATE EEG FORWARD SOLUTION
+mne_forward_solution --eeg \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_hipsurf-"$SRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif"  \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--all --mindist 5 --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_hipsurf-eeg-"$SRCSPACE"-mindist-fixed-fwd.fif" \
+
+###############################################################################################
+
+###############################################################################################

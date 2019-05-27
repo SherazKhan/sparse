@@ -1,0 +1,51 @@
+#!/bin/csh -fx
+#Template file to generate subcortical volume source spaces and corresponding forward solutions
+
+###############################################################################################
+# INITIALIZE
+###############################################################################################
+set reglist = (bsred)
+#set reglist = (rh lh ra la rp lp rc lc rt lt bsred ric lic) 
+set runlist = (1 3 4 5) #ignore run 2 it is bad because of head movement
+setenv SUBJECTS_DIR /autofs/eris/purdongp/users/pavitrak/sourceloc_data/AEP
+setenv SUBJECT cat_004
+
+###############################################################################################
+# SUBCORTICAL VOLUME SOURCE SPACES AND FORWARD SOLUTIONS
+###############################################################################################
+foreach reg ($reglist)
+    echo "current region: $reg"
+
+    ## CREATE VOLUME SOURCE SPACES
+    mne_volume_source_space --pos $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_"$reg".txt" --src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"-"$reg"-src.fif"
+
+    # CREATE RUNWISE MEG FORWARD SOLUTIONS
+    foreach run ($runlist)
+        mne_forward_solution --meg --accurate \
+        --src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"-"$reg"-src.fif" \
+        --meas $SUBJECTS_DIR/$SUBJECT"/meas/preproc_rawdata/ABR_run"$run"_raw.fif"  \
+        --mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_raw-trans.fif"  \
+        --bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+        --all --mindist 5 \
+        --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_meg_run"$run"-mindist-fwd.fif"
+    end
+
+    # AVERAGE MEG FORWARD SOLUTIONS ACROSS RUNS
+    mne_average_forward_solutions --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_meg_run1-mindist-fwd.fif" \
+    --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_meg_run3-mindist-fwd.fif" \
+    --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_meg_run4-mindist-fwd.fif" \
+    --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_meg_run5-mindist-fwd.fif" \
+    --out $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_meg-mindist-fwd.fif"
+    
+    ## CREATE EEG FORWARD SOLUTION
+    mne_forward_solution --eeg \
+    --src $SUBJECTS_DIR/$SUBJECT"/src/"$SUBJECT"-"$reg"-src.fif" \
+    --meas $SUBJECTS_DIR/$SUBJECT"/meas/preproc_rawdata/ABR_run1_raw.fif" \
+    --mri $SUBJECTS_DIR/$SUBJECT"/fwd/"$SUBJECT"_raw-trans.fif" \
+    --bem $SUBJECTS_DIR/$SUBJECT"/bem/"$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+    --all --mindist 5 \
+    --fwd $SUBJECTS_DIR/$SUBJECT"/fwd/"$SUBJECT"_"$reg"_eeg-mindist-fwd.fif"
+end
+
+###############################################################################################
+###############################################################################################

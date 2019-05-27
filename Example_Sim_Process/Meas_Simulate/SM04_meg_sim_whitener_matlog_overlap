@@ -1,0 +1,90 @@
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif ...
+	1 evoked data sets containing a total of 1 data aspects in /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+	Found channel information in evoked data. nchan = 387
+	Found the data of interest:
+		t =    -200.00 ...    1800.00 ms (Single_AVG_SSP)
+		nave = 17 aspect type = 100
+	Reading a source space...Patch information added...[done]
+	Reading a source space...Patch information added...[done]
+	2 source spaces read
+Reading forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-meg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (288969 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+Reading forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-meg-ico-4-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (5124 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+length of time vector...810
+completed saving simulation
+Reading forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-meg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (288969 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif ...
+	1 evoked data sets containing a total of 1 data aspects in /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+	Found channel information in evoked data. nchan = 387
+	Found the data of interest:
+		t =    -200.00 ...    1800.00 ms (Single_AVG_SSP)
+		nave = 17 aspect type = 100
+	Reading a source space...Patch information added...[done]
+	Reading a source space...Patch information added...[done]
+	2 source spaces read
+Reading forward solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-meg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (288969 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+Reading forward solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-meg-ico-4-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (5124 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+length of time vector...810
+sim_on
+
+sim_on = 
+
+    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]
+
+save('SM04_vpl_somato_meg_sim_overlap.mat','sim_on','-append');
+clear
+clc
+dbquit
+load('SM04_vpl_somato_meg_sim_overlap.mat')
+sim_on
+
+sim_on = 
+
+    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]    [1x2 double]
+
+who
+
+Your variables are:
+
+C                  Gvpl               Vr                 Y                  gradiom            scalarX            t                  
+C0                 Leff               X                  Ynoisefree         magnetom           scalarY            t0                 
+Cl                 N                  Xc_plot            Yw                 meas               scort_t_time       t1                 
+Cn                 P                  Xhyper             cij                meastype           sel                t2                 
+Cp                 SNR                Xhyper_plot        cort_repeat_delay  nthresh            sfreq              time               
+Cw                 Sr                 Xvpl               cort_t_time        p_sing             sim_on             tot_t_time         
+G                  Ur                 Xvpl_plot          datatype           prefix             stc                vpl_sdiv           
+
+clear
+SM04_simplotfinal('_overlap')
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more information, click <a href="matlab:opengl('problems')">here</a>.] 
+close all; SM04_simplotfinal('_overlap')
+close all; SM04_simplotfinal('_overlap')
+close all; SM04_simplotfinal('_overlap')
+close all
+close all; SM04_simplotfinal('_overlap')
+close all; SM04_simplotfinal('_overlap')
+close all

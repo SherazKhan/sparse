@@ -1,0 +1,18 @@
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/abr_plr_runall/abr_runall-MLR-bc-ave.fif ...
+	Read a total of 5 projection items:
+		axial--1.0--1.0-PCA-01 (1 x 98) idle
+		axial--1.0--1.0-PCA-02 (1 x 98) idle
+		axial--1.0--1.0-PCA-03 (1 x 98) idle
+		axial--1.0--1.0-PCA-04 (1 x 98) idle
+		Average EEG reference (1 x 70) idle
+	1 evoked data sets containing a total of 2 data aspects in /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/abr_plr_runall/abr_runall-MLR-bc-ave.fif
+	Found the data of interest:
+		t =     -20.00 ...      80.00 ms (ABR)
+		nave = 11127 aspect type = 100
+	376 x 376 full covariance (kind = 1) found.
+	Read a total of 4 projection items:
+		axial--1.0--1.0-PCA-01 (1 x 98) idle
+		axial--1.0--1.0-PCA-02 (1 x 98) idle
+		axial--1.0--1.0-PCA-03 (1 x 98) idle
+		axial--1.0--1.0-PCA-04 (1 x 98) idle
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more information, click <a href="matlab:opengl('problems')">here</a>.] 

@@ -1,0 +1,5 @@
+cd $SUBJECTS_DIR/$SUBJECT/label/$SUBJECT"-ico-2"/lh
+mri_mergelabels -i 058397-lh.label -i 080245-lh.label -i 042471-lh.label -o $SUBJECTS_DIR/$SUBJECT/label/Grp_Labels/lh.somerp1.label
+cd $SUBJECTS_DIR/$SUBJECT/label/$SUBJECT"-ico-2"/rh
+cp 084729-rh.label $SUBJECTS_DIR/$SUBJECT/label/Grp_Labels/rh.somerp1.label
+#mesial - select from 028238-lh, 041027-lh, 042471-lh, 047227-lh

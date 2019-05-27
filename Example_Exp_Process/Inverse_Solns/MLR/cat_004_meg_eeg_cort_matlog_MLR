@@ -1,0 +1,51 @@
+Reading forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004-meg_runavg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read MEG forward solution (271167 sources, 306 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+	292 out of 306 channels remain after picking
+Reading forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004-eeg-all-fixed-fwd.fif...
+	Reading a source space...[done]
+	Reading a source space...[done]
+	2 source spaces read
+	Read EEG forward solution (271167 sources, 70 channels, fixed orientations)
+	Source spaces transformed to the forward solution coordinate frame
+	64 out of 70 channels remain after picking
+mutual coherence with neighbors only
+Computing mutual coherences in ico-1p source space
+Computing mutual coherences in ico-2p source space
+Computing mutual coherences in ico-3p source space
+    0.8500    0.8900    0.9100
+
+Subspace pursuit in ico-1p source space
+converged per usual
+
+ans =
+
+     1
+
+left
+right
+Elapsed time is 27.731441 seconds.
+Subspace pursuit in ico-2p source space
+converged per usual
+
+ans =
+
+     1
+
+left
+right
+Elapsed time is 6.518080 seconds.
+Subspace pursuit in ico-3p source space
+converged per usual
+
+ans =
+
+     1
+
+left
+right
+Elapsed time is 2.377393 seconds.
+final cortical solution:317   437   955  1038

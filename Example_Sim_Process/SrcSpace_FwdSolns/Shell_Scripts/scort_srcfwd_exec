@@ -1,0 +1,42 @@
+#!/bin/csh -fx
+#Template file to generate subcortical volume source spaces and corresponding forward solutions
+
+###############################################################################################
+# INITIALIZE
+###############################################################################################
+#set reglist = (rt lt rh lh bs)
+set reglist = (rt lt rh lh rp lp rc lc ra la bsred)
+setenv SUBJECTS_DIR /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP
+setenv SUBJECT SM04
+
+###############################################################################################
+# SUBCORTICAL VOLUME SOURCE SPACES AND FORWARD SOLUTIONS
+###############################################################################################
+foreach reg ($reglist)
+    echo "current region: $reg"
+
+    # CREATE VOLUME SOURCE SPACES
+    mne_volume_source_space --pos $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_"$reg".txt" --src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_"$reg"-src.fif"
+
+    # CREATE MEG FORWARD SOLUTIONS
+    mne_forward_solution --meg --accurate \
+    --src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_"$reg"-src.fif" \
+    --meas $SUBJECTS_DIR/$SUBJECT/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+    --mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif" \
+    --bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+    --all --mindist 5 \
+    --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_meg-mindist-fwd.fif"
+   
+    # CREATE EEG FORWARD SOLUTIONS
+    mne_forward_solution --eeg \
+    --src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"_"$reg"-src.fif" \
+    --meas $SUBJECTS_DIR/$SUBJECT/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+    --mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif" \
+    --bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+    --all --mindist 5 \
+    --fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"_"$reg"_eeg-mindist-fwd.fif"
+end
+
+###############################################################################################
+
+###############################################################################################

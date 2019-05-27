@@ -1,0 +1,12 @@
+Structure		 SrcSpace Type		 #Dipoles		 Size [mm3/2]	 DMD [nAm/Size]		 #Sdivs		 Size Per Div [mm3/2]		 Modes per Div
+la			 volume			 1445			 1415		 0.25			 8		 176.88				 2
+lp			 volume			 4821			 4754		 0.25			 24		 198.08				 2
+lc			 volume			 3400			 3204		 0.25			 17		 188.47				 2
+lt			 volume			 9014			 8963		 0.03			 5		 1792.60			 4
+ra			 volume			 1455			 1417		 0.25			 8		 177.12				 2
+rp			 volume			 5070			 5001		 0.25			 24		 208.38				 2
+rc			 volume			 3218			 3052		 0.25			 16		 190.75				 2
+rt			 volume			 8067			 8023		 0.03			 4		 2005.75			 4
+bsred			 volume			 3616			 3594		 0.25			 19		 189.16				 2
+lhipsurf		 surface		 3038			 1988		 1.00			 42		 47.33				 2
+rhipsurf		 surface		 3044			 2028		 1.00			 42		 48.29				 2

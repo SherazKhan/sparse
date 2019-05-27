@@ -1,0 +1,53 @@
+#!/bin/csh -fx
+#Template file to generate subcortical volume source spaces and corresponding forward solutions
+
+###############################################################################################
+# INITIALIZE
+###############################################################################################
+setenv SUBJECTS_DIR /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP
+setenv SUBJECT SM04
+setenv CSRCSPACE ico-1
+
+###############################################################################################
+# CORTICAL SURFACE FORWARD SOLUTIONS
+###############################################################################################
+# CREATE RUNWISE MEG FORWARD SOLUTIONS (NO MINDIST)
+mne_forward_solution --meg --accurate \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"-"$CSRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT"/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif" \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-meg-"$CSRCSPACE"-fixed-fwd.fif"
+
+# CREATE MEG FORWARD SOLUTIONS
+mne_forward_solution --meg --accurate \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"-"$CSRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT"/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif" \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--mindist 5 --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-meg-"$CSRCSPACE"-mindist-fixed-fwd.fif"
+
+# CREATE EEG FORWARD SOLUTION (NO MINDIST)
+mne_forward_solution --eeg \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"-"$CSRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT"/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif"  \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-eeg-"$CSRCSPACE"-fixed-fwd.fif" \
+
+# CREATE EEG FORWARD SOLUTION
+mne_forward_solution --eeg \
+--src $SUBJECTS_DIR/$SUBJECT/src/$SUBJECT"-"$CSRCSPACE"-src.fif" \
+--meas $SUBJECTS_DIR/$SUBJECT"/meas/$SUBJECT"_SomSens_SingleNoTask_offl_SSP.fif" \
+--mri $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-trans.fif"  \
+--bem $SUBJECTS_DIR/$SUBJECT/bem/$SUBJECT"-5120-5120-5120-bem-sol.fif" \
+--mindist 5 --fixed \
+--fwd $SUBJECTS_DIR/$SUBJECT/fwd/$SUBJECT"-eeg-"$CSRCSPACE"-fixed-fwd.fif" \
+
+###############################################################################################
+
+###############################################################################################
+###############################################################################################

@@ -1,0 +1,742 @@
+Script started on Tue 02 Aug 2016 12:57:07 PM EDT
+darzar:pavitrak[27] ./exit./scort_srcfwd_exec[P[P[P[P[P[1@h[1@i[1@p
+Unknown option: `-'
+Usage: csh [ -bcdefilmnqstvVxX ] [ argument ... ].
+darzar:pavitrak[28] ./hip_srcfwd_exec
+Unknown option: `-'
+Usage: csh [ -bcdefilmnqstvVxX ] [ argument ... ].
+darzar:pavitrak[29] ./hip_srcfwd_exec
+set runlist = ( 1 3 4 5 )
+setenv SUBJECTS_DIR /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP
+setenv SUBJECT cat_004
+setenv SRCSPACE oct-3
+foreach run ( 1 3 4 5 )
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.999017  0.038969  0.021164	   1.83 mm
+	-0.040197  0.997324  0.061068	   6.54 mm
+	-0.018727 -0.061859  0.997909	  53.11 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull  (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-fixed-fwd.fif...done
+
+Finished.
+end
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.998025  0.060677  0.016227	   0.63 mm
+	-0.061641  0.995808  0.067581	   6.24 mm
+	-0.012058 -0.068448  0.997582	  60.91 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull  (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-fixed-fwd.fif...done
+
+Finished.
+end
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.999499  0.024909  0.019523	  -0.23 mm
+	-0.026206  0.997256  0.069230	   4.92 mm
+	-0.017745 -0.069707  0.997409	  64.56 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull  (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-fixed-fwd.fif...done
+
+Finished.
+end
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.998522  0.038479  0.038377	   0.78 mm
+	-0.040089  0.998308  0.042119	   6.75 mm
+	-0.036691 -0.043595  0.998375	  67.09 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull  (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-fixed-fwd.fif...done
+
+Finished.
+end
+mne_average_forward_solutions --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-fixed-fwd.fif --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-fixed-fwd.fif --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-fixed-fwd.fif --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-fixed-fwd.fif --out /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-meg-oct-3-fixed-fwd.fif
+
+mne_average_forward_solutions version 1.4 compiled at Apr 26 2016 04:21:18
+
+Forward solutions to average:
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-fixed-fwd.fif
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-fixed-fwd.fif
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-fixed-fwd.fif
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-fixed-fwd.fif
+Output file                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-meg-oct-3-fixed-fwd.fif
+
+Averaging:
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+Writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-meg-oct-3-fixed-fwd.fif...[done]
+
+Finished.
+foreach run ( 1 3 4 5 )
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --mindist 5 --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-mindist-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-mindist-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.999017  0.038969  0.021164	   1.83 mm
+	-0.040197  0.997324  0.061068	   6.54 mm
+	-0.018727 -0.061859  0.997909	  53.11 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-mindist-fixed-fwd.fif...done
+
+Finished.
+end
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --mindist 5 --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-mindist-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-mindist-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run3_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.998025  0.060677  0.016227	   0.63 mm
+	-0.061641  0.995808  0.067581	   6.24 mm
+	-0.012058 -0.068448  0.997582	  60.91 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-mindist-fixed-fwd.fif...done
+
+Finished.
+end
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --mindist 5 --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-mindist-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-mindist-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run4_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.999499  0.024909  0.019523	  -0.23 mm
+	-0.026206  0.997256  0.069230	   4.92 mm
+	-0.017745 -0.069707  0.997409	  64.56 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-mindist-fixed-fwd.fif...done
+
+Finished.
+end
+mne_forward_solution --meg --accurate --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --mindist 5 --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-mindist-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-mindist-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run5_raw.fif
+Coordinate transformation: MEG device -> head
+	 0.998522  0.038479  0.038377	   0.78 mm
+	-0.040089  0.998308  0.042119	   6.75 mm
+	-0.036691 -0.043595  0.998375	  67.09 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing MEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-mindist-fixed-fwd.fif...done
+
+Finished.
+end
+mne_average_forward_solutions --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-mindist-fixed-fwd.fif --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-mindist-fixed-fwd.fif --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-mindist-fixed-fwd.fif --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-mindist-fixed-fwd.fif --out /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-meg-oct-3-mindist-fixed-fwd.fif
+
+mne_average_forward_solutions version 1.4 compiled at Apr 26 2016 04:21:18
+
+Forward solutions to average:
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-mindist-fixed-fwd.fif
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-mindist-fixed-fwd.fif
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-mindist-fixed-fwd.fif
+  0.250 * /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-mindist-fixed-fwd.fif
+Output file                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-meg-oct-3-mindist-fixed-fwd.fif
+
+Averaging:
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-mindist-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run1-mindist-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-mindist-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run3-mindist-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-mindist-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run4-mindist-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+	Reading MEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-mindist-fixed-fwd.fif...[done]
+	Reading EEG forward solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf1_meg_run5-mindist-fixed-fwd.fif...[N/A]
+	Averaging...[done]
+Writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-meg-oct-3-mindist-fixed-fwd.fif...[done]
+
+Finished.
+mne_forward_solution --eeg --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-eeg-oct-3-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-eeg-oct-3-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+MEG not requested. MEG channels omitted.
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull  (will take a few...)
+Thank you for waiting.
+
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing EEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-eeg-oct-3-fixed-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif --meas /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif --mri /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif --bem /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif --all --mindist 5 --fixed --fwd /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-eeg-oct-3-mindist-fixed-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif
+MRI -> head transform source : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_raw-trans.fif
+Measurement data             : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+BEM model                    : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Fixed source orientations
+Destination for the solution : /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-eeg-oct-3-mindist-fixed-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/src/cat_004_hipsurf-oct-3-src.fif...
+Read 2 source spaces a total of 6484 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999913 -0.004216  0.012499	   3.93 mm
+	-0.000424  0.936785  0.349905	  18.40 mm
+	-0.013184 -0.349879  0.936702	  46.62 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+Read  70 EEG channels from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/meas/preproc_rawdata/ABR_run1_raw.fif
+MEG not requested. MEG channels omitted.
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/bem/cat_004-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+8 processors. I will use one thread for each of the 2 source spaces.
+Computing EEG at 6484 source locations (fixed orientations)...done.
+
+writing /autofs/cluster/purdonlab/users/pavitrak/sourceloc_data/AEP/cat_004/fwd/cat_004_hipsurf-eeg-oct-3-mindist-fixed-fwd.fif...done
+
+Finished.
+darzar:pavitrak[30] exit
+exit
+
+Script done on Thu 04 Aug 2016 02:04:20 PM EDT

@@ -1,0 +1,1214 @@
+Computing mutual coherences in neighborhood of ...lhipsurf
+Computing mutual coherences in neighborhood of ...la
+Computing mutual coherences in neighborhood of ...lp
+Computing mutual coherences in neighborhood of ...lc
+Computing mutual coherences in neighborhood of ...lt
+Computing mutual coherences in neighborhood of ...bsred
+Computing mutual coherences in neighborhood of ...rt
+Computing mutual coherences in neighborhood of ...rc
+Computing mutual coherences in neighborhood of ...rp
+Computing mutual coherences in neighborhood of ...ra
+Computing mutual coherences in neighborhood of ...rhipsurf
+subcortical neighborhood mutual coherence...0.85
+Obtaining Forward Solutions for Best Cortical Regions
+Adding in Forward Solutions for Subcortical Regions
+  Columns 1 through 27
+
+    26    61    88   263   325   326   327   328   329   330   331   332   333   334   335   336   337   338   339   340   341   342   343   344   345   346   347
+
+  Columns 28 through 54
+
+   348   349   350   351   352   353   354   355   356   357   358   359   360   361   362   363   364   365   366   367   368   369   370   371   372   373   374
+
+  Columns 55 through 81
+
+   375   376   377   378   379   380   381   382   383   384   385   386   387   388   389   390   391   392   393   394   395   396   397   398   399   400   401
+
+  Columns 82 through 108
+
+   402   403   404   405   406   407   408   409   410   411   412   413   414   415   416   417   418   419   420   421   422   423   424   425   426   427   428
+
+  Columns 109 through 135
+
+   429   430   431   432   433   434   435   436   437   438   439   440   441   442   443   444   445   446   447   448   449   450   451   452   453   454   455
+
+  Columns 136 through 162
+
+   456   457   458   459   460   461   462   463   464   465   466   467   468   469   470   471   472   473   474   475   476   477   478   479   480   481   482
+
+  Columns 163 through 189
+
+   483   484   485   486   487   488   489   490   491   492   493   494   495   496   497   498   499   500   501   502   503   504   505   506   507   508   509
+
+  Columns 190 through 213
+
+   510   511   512   513   514   515   516   517   518   519   520   521   522   523   524   525   526   527   528   529   530   531   532   533
+
+Formatting Measurement to Study
+Estimation of Source Currents in Joint Cortical-Subcortical SourceSpace
+     1
+
+[Warning: MATLAB has disabled some advanced graphics rendering features by switching to software OpenGL. For more information, click <a href="matlab:opengl('problems')">here</a>.] 
+     1
+
+converged per usual
+     2
+
+     2
+
+converged per usual
+     3
+
+     3
+
+converged per usual
+     4
+
+     4
+
+converged per usual
+    97
+
+    97
+
+converged per usual
+     6
+
+     6
+
+converged per usual
+    97
+
+    97
+
+converged per usual
+    10
+
+    10
+
+converged per usual
+    10
+
+    10
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+     3
+
+    15
+
+    15
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+     3
+
+    15
+
+    15
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+     3
+
+    15
+
+    15
+
+converged per usual
+    15
+
+    15
+
+converged per usual
+    98
+
+    15
+
+    15
+
+converged per usual
+     3
+
+     3
+
+converged per usual
+     3
+
+     3
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+     3
+
+    99
+
+    99
+
+converged per usual
+     3
+
+    51
+
+    51
+
+converged per usual
+     3
+
+     3
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    36
+
+    36
+
+converged per usual
+    36
+
+    36
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    36
+
+    36
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    97
+
+    97
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    38
+
+    38
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    52
+
+    52
+
+converged per usual
+    57
+
+    57
+
+converged per usual
+    62
+
+    62
+
+converged per usual
+    57
+
+    57
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    60
+
+    60
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    62
+
+    62
+
+converged per usual
+    62
+
+    62
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    67
+
+    67
+
+converged per usual
+    77
+
+    77
+
+converged per usual
+     3
+
+    58
+
+    58
+
+converged per usual
+    77
+
+    77
+
+converged per usual
+     3
+
+    65
+
+    65
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    70
+
+    70
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    58
+
+    58
+
+converged per usual
+    57
+
+    57
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    75
+
+    75
+
+converged per usual
+    77
+
+    77
+
+converged per usual
+    72
+
+    72
+
+converged per usual
+    86
+
+    86
+
+converged per usual
+    93
+
+    93
+
+converged per usual
+    57
+
+    57
+
+converged per usual
+    57
+
+    57
+
+converged per usual
+    57
+
+    57
+
+converged per usual
+    86
+
+    86
+
+converged per usual
+    83
+
+    83
+
+converged per usual
+    86
+
+    86
+
+converged per usual
+    99
+
+    93
+
+    93
+
+converged per usual
+    99
+
+    86
+
+    86
+
+converged per residual error min.
+    86
+
+    86
+
+converged per usual
+    86
+
+    86
+
+converged per usual
+    98
+
+    93
+
+    93
+
+converged per usual
+    92
+
+    92
+
+converged per usual
+    93
+
+    93
+
+converged per usual
+    94
+
+    94
+
+converged per usual
+    57
+
+    57
+
+converged per usual
+    99
+
+    99
+
+converged per usual
+    97
+
+    97
+
+converged per usual
+    98
+
+    98
+
+converged per usual
+    99
+
+    99
+
+converged per usual
+    97
+
+    97
+
+converged per usual
+   101
+
+   101
+
+converged per usual
+   101
+
+   101
+
+converged per usual
+    47
+
+    47
+
+converged per usual
+   101
+
+   101
+
+converged per usual
+    47
+
+    47
+
+converged per usual
+   101
+
+   101
+
+converged per usual
+   121
+
+   202
+
+   202
+
+converged per usual
+   120
+
+   120
+
+converged per usual
+   120
+
+   120
+
+converged per usual
+   120
+
+   120
+
+converged per usual
+   118
+
+   118
+
+converged per usual
+   118
+
+   118
+
+converged per usual
+   118
+
+   118
+
+converged per usual
+   196
+
+   196
+
+converged per usual
+   120
+
+   120
+
+converged per usual
+   118
+
+   118
+
+converged per usual
+   118
+
+   118
+
+converged per usual
+   118
+
+   118
+
+converged per usual
+   118
+
+   118
+
+converged per usual
+   122
+
+   121
+
+   121
+
+converged per usual
+   121
+
+   121
+
+converged per usual
+   122
+
+   122
+
+converged per usual
+   122
+
+   122
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   122
+
+   125
+
+   125
+
+converged per usual
+   130
+
+   130
+
+converged per usual
+   122
+
+   132
+
+   132
+
+converged per usual
+   139
+
+   139
+
+converged per usual
+   123
+
+   123
+
+converged per usual
+   130
+
+   130
+
+converged per usual
+   121
+
+   121
+
+converged per usual
+   122
+
+   132
+
+   132
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   122
+
+   142
+
+   142
+
+converged per usual
+   137
+
+   137
+
+converged per usual
+   122
+
+   130
+
+   130
+
+converged per usual
+   130
+
+   130
+
+converged per usual
+   148
+
+   148
+
+converged per usual
+   149
+
+   149
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   121
+
+   121
+
+converged per usual
+   149
+
+   149
+
+converged per usual
+   140
+
+   140
+
+converged per usual
+   121
+
+   121
+
+converged per usual
+     4
+
+   149
+
+   149
+
+converged per usual
+   148
+
+   148
+
+converged per usual
+   149
+
+   149
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   148
+
+   148
+
+converged per usual
+   161
+
+   161
+
+converged per usual
+   154
+
+   154
+
+converged per usual
+   149
+
+   149
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   148
+
+   148
+
+converged per usual
+   142
+
+   142
+
+converged per usual
+   148
+
+   148
+
+converged per usual
+     4
+
+   149
+
+   149
+
+converged per usual
+   148
+
+   148
+
+converged per usual
+   170
+
+   170
+
+converged per usual
+   167
+
+   167
+
+converged per usual
+   170
+
+   170
+
+converged per usual
+   167
+
+   167
+
+converged per usual
+   170
+
+   170
+
+converged per usual
+   167
+
+   167
+
+converged per usual
+   170
+
+   170
+
+converged per usual
+   167
+
+   167
+
+converged per usual
+   121
+
+   178
+
+   178
+
+converged per residual error min.
+   122
+
+   130
+
+   177
+
+   177
+
+converged per usual
+   121
+
+   178
+
+   178
+
+converged per residual error min.
+   122
+
+   122
+
+converged per usual
+   122
+
+   130
+
+   177
+
+   177
+
+converged per usual
+   122
+
+   130
+
+   177
+
+   177
+
+converged per usual
+   178
+
+   178
+
+converged per usual
+   122
+
+   122
+
+converged per usual
+   122
+
+   130
+
+   177
+
+   177
+
+converged per usual
+   122
+
+   130
+
+   177
+
+   177
+
+converged per usual
+   122
+
+   130
+
+   177
+
+   177
+
+converged per usual
+   122
+
+   130
+
+   183
+
+   183
+
+converged per usual
+   122
+
+   130
+
+   178
+
+   178
+
+converged per residual error min.
+   178
+
+   178
+
+converged per usual
+   122
+
+   130
+
+   178
+
+   196
+
+   196
+
+converged per usual
+   122
+
+   130
+
+   177
+
+   177
+
+converged per residual error min.
+   122
+
+   130
+
+   183
+
+   183
+
+converged per usual
+   122
+
+   122
+
+converged per usual
+   122
+
+   130
+
+   183
+
+   183
+
+converged per usual
+   191
+
+   191
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   122
+
+   130
+
+   183
+
+   183
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   196
+
+   196
+
+converged per usual
+   196
+
+   196
+
+converged per usual
+   191
+
+   191
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+     4
+
+   153
+
+   153
+
+converged per usual
+   191
+
+   191
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   121
+
+   121
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   207
+
+   207
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   202
+
+   202
+
+converged per usual
+   170
+
+   170
+
+converged per usual
+   170
+
+   170
+
+converged per usual
+   202
+
+   202
+
+converged per usual

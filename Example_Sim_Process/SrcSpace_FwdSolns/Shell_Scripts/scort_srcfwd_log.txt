@@ -1,0 +1,1220 @@
+Script started on Sun 25 Sep 2016 07:39:05 AM EDT
+./scort_srcfwd_execdarzar:pavitrak[5] ./scort_srcfwd_exec
+set reglist = ( rt lt rh lh rp lp rc lc ra la bsred )
+setenv SUBJECTS_DIR /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP
+setenv SUBJECT SM04
+foreach reg ( rt lt rh lh rp lp rc lc ra la bsred )
+echo current region: rt
+current region: rt
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif
+
+Positions (in millimeters) and orientations
+24201 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rt_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rt_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif...
+Read 1 source spaces a total of 24201 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 24201 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rt_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rt_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rt_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rt-src.fif...
+Read 1 source spaces a total of 24201 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: lt
+current region: lt
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif
+
+Positions (in millimeters) and orientations
+27042 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lt_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lt_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif...
+Read 1 source spaces a total of 27042 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 27042 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lt_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lt_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lt_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lt-src.fif...
+Read 1 source spaces a total of 27042 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: rh
+current region: rh
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif
+
+Positions (in millimeters) and orientations
+12606 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rh_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rh_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif...
+Read 1 source spaces a total of 12606 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 12606 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rh_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rh_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rh_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rh-src.fif...
+Read 1 source spaces a total of 12606 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: lh
+current region: lh
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif
+
+Positions (in millimeters) and orientations
+11553 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lh_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lh_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif...
+Read 1 source spaces a total of 11553 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 11553 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lh_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lh_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lh_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lh-src.fif...
+Read 1 source spaces a total of 11553 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: rp
+current region: rp
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif
+
+Positions (in millimeters) and orientations
+15210 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rp_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rp_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif...
+Read 1 source spaces a total of 15210 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 15210 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rp_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rp_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rp_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rp-src.fif...
+Read 1 source spaces a total of 15210 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: lp
+current region: lp
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif
+
+Positions (in millimeters) and orientations
+14463 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lp_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lp_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif...
+Read 1 source spaces a total of 14463 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 14463 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lp_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lp_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lp_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lp-src.fif...
+Read 1 source spaces a total of 14463 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: rc
+current region: rc
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif
+
+Positions (in millimeters) and orientations
+9654 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rc_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rc_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif...
+Read 1 source spaces a total of 9654 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 9654 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rc_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rc_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_rc_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_rc-src.fif...
+Read 1 source spaces a total of 9654 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: lc
+current region: lc
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif
+
+Positions (in millimeters) and orientations
+10200 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lc_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lc_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif...
+Read 1 source spaces a total of 10200 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 10200 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lc_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lc_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_lc_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_lc-src.fif...
+Read 1 source spaces a total of 10200 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: ra
+current region: ra
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif
+
+Positions (in millimeters) and orientations
+4365 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_ra_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_ra_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif...
+Read 1 source spaces a total of 4365 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 4365 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_ra_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_ra_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_ra_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_ra-src.fif...
+Read 1 source spaces a total of 4365 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: la
+current region: la
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif
+
+Positions (in millimeters) and orientations
+4335 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_la_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_la_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif...
+Read 1 source spaces a total of 4335 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 4335 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_la_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_la_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_la_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_la-src.fif...
+Read 1 source spaces a total of 4335 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+echo current region: bsred
+current region: bsred
+mne_volume_source_space --pos /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred.txt --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif
+
+mne_volume_source_space version 1.11 compiled at Apr 26 2016 04:19:36
+
+Source location file  : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred.txt
+Assuming input in millimeters
+Assuming input in MRI coordinates
+Output file           : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif
+
+Positions (in millimeters) and orientations
+10848 sources
+Wrote /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif
+mne_forward_solution --meg --accurate --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_bsred_meg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Accurate field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_bsred_meg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif...
+Read 1 source spaces a total of 10848 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Coordinate transformation: MEG device -> head
+	 0.997749  0.037498  0.055588	  -1.20 mm
+	-0.029208  0.989279 -0.143084	 -19.05 mm
+	-0.060357  0.141138  0.988148	  46.30 mm
+	 0.000000  0.000000  0.000000     1.00
+EEG not requested. EEG channels omitted.
+69 coil definitions read
+Head coordinate coil definitions created.
+Source spaces are now in head coordinates.
+
+Setting up the BEM model using /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif...
+
+Loading surfaces...
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+	Triangle normals and neighboring triangles...[done]
+	Vertex neighbors...[done]
+	Distances between neighboring vertices...[15360 distances done]
+Three-layer model surfaces loaded.
+
+Loading the solution matrix...
+
+Loaded linear collocation BEM solution from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Employing the head->MRI coordinate transform with the BEM model.
+BEM model /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif is now set up
+
+Source spaces are in head coordinates.
+Checking that the sources are inside the inner skull and at least    5.0 mm away (will take a few...)
+Thank you for waiting.
+
+Setting up compensation data...
+	No compensation set. Nothing more to do.
+Composing the field computation matrix...[done]
+8 processors. I will use 3 threads : 1 source spaces x 3 source components.
+Computing MEG at 10848 source locations (free orientations)...done.
+
+writing /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_bsred_meg-mindist-fwd.fif...done
+
+Finished.
+mne_forward_solution --eeg --src /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif --meas /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif --mri /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif --bem /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif --all --mindist 5 --fwd /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_bsred_eeg-mindist-fwd.fif
+
+mne_forward_solution version 2.10 compiled at Apr 26 2016 04:18:08
+
+Source space                 : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif
+MRI -> head transform source : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04-trans.fif
+Measurement data             : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+BEM model                    : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/bem/SM04-5120-5120-5120-bem-sol.fif
+Standard field computations
+Do computations in head coordinates.
+Free source orientations
+Destination for the solution : /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/fwd/SM04_bsred_eeg-mindist-fwd.fif
+Calculate solution for all source locations.
+
+Reading /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/src/SM04_bsred-src.fif...
+Read 1 source spaces a total of 10848 active source locations
+
+Coordinate transformation: MRI (surface RAS) -> head
+	 0.999470 -0.030782 -0.010607	  -4.39 mm
+	 0.032282  0.894501  0.445899	   4.07 mm
+	-0.004238 -0.446005  0.895020	  46.97 mm
+	 0.000000  0.000000  0.000000     1.00
+
+Read 306 MEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+Read  70 EEG channels from /autofs/eris/purdongp/users/pavitrak/sourceloc_data/SEP/SM04/meas/SM04_SomSens_SingleNoTask_offl_SSP.fif
+MEG not requested. MEG channels omitted.
+Some EEG channels do not have locations assigned.
+end
+darzar:pavitrak[6] exit
+exit
+
+Script done on Sun 25 Sep 2016 12:06:46 PM EDT

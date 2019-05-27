@@ -1,0 +1,9 @@
+ORDER OF EXECUTION
+
+reorder_sdiv_fwd
+cort_scort_resmat -with all and all, and with sparse and all
+SM04_ssimSEP_inv_meg
+analyze_plot_resmat - with flag_on 1 and flag_on 0
+
+
+Never use Svolume Subdivs Numbering with Reordered Sdiv_Fwd Files - they could be off - particularly for brainstem
